@@ -1,0 +1,35 @@
+{
+  "name": "university-admin-backend",
+  "version": "1.0.0",
+  "description": "Independent MGKVP Admin Clone API - writes only to UniversityAdminClone DB",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "schema": "node src/utils/applySchema.js",
+    "seed": "node src/utils/seedAdmin.js",
+    "inspect:source": "node src/utils/inspectSourceDb.js",
+    "import:source": "node src/utils/importFromSource.js",
+    "import:albums": "node src/utils/importAlbumsOnly.js",
+    "import:cms": "node src/utils/importAllCmsData.js",
+    "import:head": "node src/utils/importHeadPortalData.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "file-type": "^16.5.4",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mssql": "^11.0.1",
+    "multer": "^1.4.5-lts.1",
+    "uuid": "^11.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

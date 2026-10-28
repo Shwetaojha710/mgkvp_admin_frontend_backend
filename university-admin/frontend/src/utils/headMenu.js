@@ -1,0 +1,197 @@
+import {
+  MdDashboard,
+  MdImage,
+  MdBook,
+  MdDescription,
+  MdCollections,
+  MdPhotoLibrary,
+  MdChat,
+  MdNewspaper,
+  MdPerson,
+  MdAccountCircle,
+  MdPeople,
+  MdInsertDriveFile,
+  MdCloudUpload,
+  MdMenuBook,
+  MdMouse,
+  MdLayers,
+  MdFeedback,
+  MdNotifications,
+  MdAnalytics,
+  MdVerifiedUser,
+  MdPowerSettingsNew,
+} from 'react-icons/md';
+
+/**
+ * Head (Department Head) portal sidebar — separate from Admin / Webmaster / Faculty.
+ */
+export const headMenuItems = [
+  {
+    key: 'dashboard',
+    label: 'Dashboard',
+    icon: MdDashboard,
+    to: '/admin',
+  },
+  {
+    key: 'logo-email',
+    label: 'LOGO & EMAIL',
+    icon: MdImage,
+    to: '/admin/m/dept-logo-email',
+  },
+  {
+    key: 'add-menu',
+    label: 'ADD MENU',
+    icon: MdBook,
+    to: '/admin/m/dept-add-menu',
+  },
+  {
+    key: 'page-content',
+    label: 'PAGE CONTENT',
+    icon: MdDescription,
+    to: '/admin/m/dept-page-content',
+  },
+  {
+    key: 'album',
+    label: 'ALBUM',
+    icon: MdCollections,
+    to: '/admin/albums',
+  },
+  {
+    key: 'gallery',
+    label: 'GALLERY',
+    icon: MdPhotoLibrary,
+    to: '/admin/gallery-images',
+  },
+  {
+    key: 'banner',
+    label: 'BANNER',
+    icon: MdPhotoLibrary,
+    to: '/admin/banners',
+  },
+  {
+    key: 'testimonial',
+    label: 'TESTIMONIAL',
+    icon: MdChat,
+    to: '/admin/m/testimonial',
+  },
+  {
+    key: 'news-event',
+    label: 'NEWS EVENT',
+    icon: MdNewspaper,
+    to: '/admin/news-events',
+  },
+  {
+    key: 'head',
+    label: 'HEAD',
+    icon: MdPerson,
+    to: '/admin/m/dept-head',
+  },
+  {
+    key: 'alumni',
+    label: 'ALUMNI',
+    icon: MdAccountCircle,
+    children: [
+      { label: 'ALUMNI ASSOCIATION', to: '/admin/m/alumni-association' },
+      { label: 'ALUMNI LIST', to: '/admin/m/alumni-list' },
+      { label: 'ALUMNI NEWS EVENT LIST', to: '/admin/m/alumni-news-event' },
+    ],
+  },
+  {
+    key: 'character-certificate',
+    label: 'CHARACTER CERTIFICATE',
+    icon: MdVerifiedUser,
+    to: '/admin/m/character-certificate',
+  },
+  {
+    key: 'professors',
+    label: 'PROFESSORS',
+    icon: MdPeople,
+    children: [
+      { label: 'LIST OF PROFESSORS', to: '/admin/faculty' },
+      { label: 'PROFESSORS PAGES', to: '/admin/m/professors-pages' },
+    ],
+  },
+  {
+    key: 'ex-professors',
+    label: 'EX-PROFESSORS',
+    icon: MdPeople,
+    to: '/admin/m/ex-professors',
+  },
+  {
+    key: 'journal',
+    label: 'JOURNAL',
+    icon: MdInsertDriveFile,
+    to: '/admin/m/journals',
+  },
+  {
+    key: 'upload-documents',
+    label: 'UPLOAD DOCUMENTS',
+    icon: MdCloudUpload,
+    to: '/admin/documents',
+  },
+  {
+    key: 'syllabus',
+    label: 'SYLLABUS',
+    icon: MdMenuBook,
+    to: '/admin/m/dept-syllabus',
+  },
+  {
+    key: 'e-content',
+    label: 'E-CONTENT',
+    icon: MdMouse,
+    to: '/admin/m/dept-e-content',
+  },
+  {
+    key: 'student-request',
+    label: 'STUDENT REQUEST',
+    icon: MdPeople,
+    to: '/admin/m/student-request',
+  },
+  {
+    key: 'student-centric',
+    label: 'STUDENT CENTRIC ACTIVITY',
+    icon: MdBook,
+    to: '/admin/m/extra-curricular',
+  },
+  {
+    key: 'social-media',
+    label: 'SOCAIL MEDIA LINK',
+    icon: MdLayers,
+    to: '/admin/m/social-media-link',
+  },
+  {
+    key: 'feedback',
+    label: 'FEEDBACK',
+    icon: MdFeedback,
+    children: [
+      { label: 'STUDENT', to: '/admin/m/feedback-student' },
+      { label: 'PARENT', to: '/admin/m/feedback-parent' },
+      { label: 'ALUMNI', to: '/admin/m/feedback-alumni' },
+      { label: 'STAKEHOLDER', to: '/admin/m/feedback-stakeholder' },
+    ],
+  },
+  {
+    key: 'all-notification',
+    label: 'ALL NOTIFICATION',
+    icon: MdNotifications,
+    children: [
+      { label: 'NOTICE BOARD', to: '/admin/notices' },
+      { label: 'ADMISSION', to: '/admin/m/admission-notification' },
+      { label: 'EXAMINATION', to: '/admin/m/exam-notification' },
+      { label: 'TIME-TABLE', to: '/admin/m/time-table' },
+    ],
+  },
+  {
+    key: 'analytics',
+    label: 'ANALYTICS DASHBOARD',
+    icon: MdAnalytics,
+    external:
+      'https://analytics.google.com/analytics/web/#/p431848658/reports/reportinghub?params=_u..nav%3Dmaui',
+  },
+  {
+    key: 'logout',
+    label: 'LOGOUT',
+    icon: MdPowerSettingsNew,
+    action: 'logout',
+  },
+];

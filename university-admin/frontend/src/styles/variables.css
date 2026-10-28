@@ -1,0 +1,25 @@
+:root {
+  --mgkvp-topbar: #01253b;
+  --mgkvp-sidebar: #0b1220;
+  --mgkvp-sidebar-hover: #152033;
+  --mgkvp-sidebar-active: #ffc107;
+  --mgkvp-accent: #ffc107;
+  --mgkvp-page-bg: #e8f1f7;
+  --mgkvp-card: #ffffff;
+  --mgkvp-text: #37474f;
+  --mgkvp-heading: #263238;
+  --mgkvp-link: #0288d1;
+  --mgkvp-primary: #0288d1;
+  --mgkvp-primary-dark: #01579b;
+  --mgkvp-success-btn: #43a047;
+  --mgkvp-danger: #e53935;
+  --mgkvp-table-header: #1565c0;
+  --mgkvp-border: #e3eaf0;
+  --mgkvp-muted: #78909c;
+  --sidebar-width: 64px;
+  --sidebar-expanded: 260px;
+  --topbar-height: 64px;
+  --radius: 10px;
+  --shadow: 0 4px 18px rgba(1, 37, 59, 0.08);
+  --font-family: 'Poppins', sans-serif;
+}
